@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1e1e63b45110ddb315daeb6cc804cb9f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1e1e63b45110ddb315daeb6cc804cb9f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1e1e63b45110ddb315daeb6cc804cb9f = L.map(
+                "map_1e1e63b45110ddb315daeb6cc804cb9f",
+                {
+                    center: [43.7, -79.4],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_723245de7e6b7bee81001e558342d0b5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+            var circle_marker_849cd57aa0e13b43d18a517dc8b3a954 = L.circleMarker(
+                [43.6532, -79.3832],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+        var popup_f28b15eabd2826b5bfa498432f64a556 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea3f3a974cc4331bf1f9ae5e7e13748d = $(`<div id="html_ea3f3a974cc4331bf1f9ae5e7e13748d" style="width: 100.0%; height: 100.0%;">Toronto</div>`)[0];
+            popup_f28b15eabd2826b5bfa498432f64a556.setContent(html_ea3f3a974cc4331bf1f9ae5e7e13748d);
+        
+
+        circle_marker_849cd57aa0e13b43d18a517dc8b3a954.bindPopup(popup_f28b15eabd2826b5bfa498432f64a556)
+        ;
+
+        
+    
+    
+            circle_marker_849cd57aa0e13b43d18a517dc8b3a954.bindTooltip(
+                `<div>
+                     Toronto (Core GTA)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bbf052ac1a6715fbbe7b5edcef6dfdfd = L.marker(
+                [43.6532, -79.3832],
+                {}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+            var beautify_icon_864ca3accdb1b8bb2d3264559bef50bc = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 1, "textColor": "blue"}
+            )
+            marker_bbf052ac1a6715fbbe7b5edcef6dfdfd.setIcon(beautify_icon_864ca3accdb1b8bb2d3264559bef50bc);
+        
+    
+            marker_bbf052ac1a6715fbbe7b5edcef6dfdfd.bindTooltip(
+                `<div>
+                     Toronto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4d37eec8313bf889d0ac4c9eef5a9a31 = L.circleMarker(
+                [43.8561, -79.3369],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+        var popup_8353fe8a67531bd5ce2e63471915422e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e07a52c448331c434795a96b7d54f726 = $(`<div id="html_e07a52c448331c434795a96b7d54f726" style="width: 100.0%; height: 100.0%;">Markham</div>`)[0];
+            popup_8353fe8a67531bd5ce2e63471915422e.setContent(html_e07a52c448331c434795a96b7d54f726);
+        
+
+        circle_marker_4d37eec8313bf889d0ac4c9eef5a9a31.bindPopup(popup_8353fe8a67531bd5ce2e63471915422e)
+        ;
+
+        
+    
+    
+            circle_marker_4d37eec8313bf889d0ac4c9eef5a9a31.bindTooltip(
+                `<div>
+                     Markham (Core GTA)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51e08dabfa83d797af3fee5c336fa94b = L.marker(
+                [43.8561, -79.3369],
+                {}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+            var beautify_icon_eb4a1bf83340488ab864c0b3e367de5e = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 2, "textColor": "blue"}
+            )
+            marker_51e08dabfa83d797af3fee5c336fa94b.setIcon(beautify_icon_eb4a1bf83340488ab864c0b3e367de5e);
+        
+    
+            marker_51e08dabfa83d797af3fee5c336fa94b.bindTooltip(
+                `<div>
+                     Markham
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_eb48ebc90f18137fa43ed6a2f3ceb3c3 = L.circleMarker(
+                [43.8828, -79.4372],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+        var popup_409bdcbe3f3e22b696257ba07e9cdf24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0151ddb72e9d616d3e3ce037261f8ed6 = $(`<div id="html_0151ddb72e9d616d3e3ce037261f8ed6" style="width: 100.0%; height: 100.0%;">Richmond Hill</div>`)[0];
+            popup_409bdcbe3f3e22b696257ba07e9cdf24.setContent(html_0151ddb72e9d616d3e3ce037261f8ed6);
+        
+
+        circle_marker_eb48ebc90f18137fa43ed6a2f3ceb3c3.bindPopup(popup_409bdcbe3f3e22b696257ba07e9cdf24)
+        ;
+
+        
+    
+    
+            circle_marker_eb48ebc90f18137fa43ed6a2f3ceb3c3.bindTooltip(
+                `<div>
+                     Richmond Hill (Core GTA)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9fdbcbf5f47a71228dac89f8894ca8fe = L.marker(
+                [43.8828, -79.4372],
+                {}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+            var beautify_icon_d7b51a0a91d58e419183f578932120bd = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 3, "textColor": "blue"}
+            )
+            marker_9fdbcbf5f47a71228dac89f8894ca8fe.setIcon(beautify_icon_d7b51a0a91d58e419183f578932120bd);
+        
+    
+            marker_9fdbcbf5f47a71228dac89f8894ca8fe.bindTooltip(
+                `<div>
+                     Richmond Hill
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_215a1dd2450f77719c1cfe94737a8361 = L.circleMarker(
+                [43.7731, -79.2564],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+        var popup_60faf5cc3870ffd8b45cc71fdd5f9f2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bdea329069d5f5b7b4f50fd946d66eee = $(`<div id="html_bdea329069d5f5b7b4f50fd946d66eee" style="width: 100.0%; height: 100.0%;">Scarborough</div>`)[0];
+            popup_60faf5cc3870ffd8b45cc71fdd5f9f2c.setContent(html_bdea329069d5f5b7b4f50fd946d66eee);
+        
+
+        circle_marker_215a1dd2450f77719c1cfe94737a8361.bindPopup(popup_60faf5cc3870ffd8b45cc71fdd5f9f2c)
+        ;
+
+        
+    
+    
+            circle_marker_215a1dd2450f77719c1cfe94737a8361.bindTooltip(
+                `<div>
+                     Scarborough (Core GTA)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e8a878929ec751d4a58235cebb47791 = L.marker(
+                [43.7731, -79.2564],
+                {}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+            var beautify_icon_5a9d311ec96b533a1143680098478e61 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 4, "textColor": "blue"}
+            )
+            marker_3e8a878929ec751d4a58235cebb47791.setIcon(beautify_icon_5a9d311ec96b533a1143680098478e61);
+        
+    
+            marker_3e8a878929ec751d4a58235cebb47791.bindTooltip(
+                `<div>
+                     Scarborough
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e360194bc5865432b664c23234bb454c = L.circleMarker(
+                [43.7615, -79.4152],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+        var popup_a1560e3f441a8a4fd9986b81ead16fbe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57debd8655f2266b2007d98f9497ee46 = $(`<div id="html_57debd8655f2266b2007d98f9497ee46" style="width: 100.0%; height: 100.0%;">North York</div>`)[0];
+            popup_a1560e3f441a8a4fd9986b81ead16fbe.setContent(html_57debd8655f2266b2007d98f9497ee46);
+        
+
+        circle_marker_e360194bc5865432b664c23234bb454c.bindPopup(popup_a1560e3f441a8a4fd9986b81ead16fbe)
+        ;
+
+        
+    
+    
+            circle_marker_e360194bc5865432b664c23234bb454c.bindTooltip(
+                `<div>
+                     North York (Core GTA)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dee0166ebaf889e0ccce15727cca362f = L.marker(
+                [43.7615, -79.4152],
+                {}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+            var beautify_icon_a986008438af1c6f27c70f0c03920ce0 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 5, "textColor": "blue"}
+            )
+            marker_dee0166ebaf889e0ccce15727cca362f.setIcon(beautify_icon_a986008438af1c6f27c70f0c03920ce0);
+        
+    
+            marker_dee0166ebaf889e0ccce15727cca362f.bindTooltip(
+                `<div>
+                     North York
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_14e4291bfd1a4535d348b3c5bbf7fe78 = L.circleMarker(
+                [43.8361, -79.5035],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+        var popup_64530cf84ab648ffca6e4231b79f8b03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cfc0cbf4cbd0d14dff6900deabab637d = $(`<div id="html_cfc0cbf4cbd0d14dff6900deabab637d" style="width: 100.0%; height: 100.0%;">Vaughan</div>`)[0];
+            popup_64530cf84ab648ffca6e4231b79f8b03.setContent(html_cfc0cbf4cbd0d14dff6900deabab637d);
+        
+
+        circle_marker_14e4291bfd1a4535d348b3c5bbf7fe78.bindPopup(popup_64530cf84ab648ffca6e4231b79f8b03)
+        ;
+
+        
+    
+    
+            circle_marker_14e4291bfd1a4535d348b3c5bbf7fe78.bindTooltip(
+                `<div>
+                     Vaughan (Near GTA)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_460daba8b743f99305509620d60e642c = L.marker(
+                [43.8361, -79.5035],
+                {}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+            var beautify_icon_d69a47f3d9d1f3d65c92fd52f0543f4f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 6, "textColor": "green"}
+            )
+            marker_460daba8b743f99305509620d60e642c.setIcon(beautify_icon_d69a47f3d9d1f3d65c92fd52f0543f4f);
+        
+    
+            marker_460daba8b743f99305509620d60e642c.bindTooltip(
+                `<div>
+                     Vaughan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_915b1e8665df6b7e25cc0f3db40544bf = L.circleMarker(
+                [43.589, -79.6441],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+        var popup_0653d92285133958e21968f614ca02ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bf56e3c27adb8c607c0741e96e4174a = $(`<div id="html_6bf56e3c27adb8c607c0741e96e4174a" style="width: 100.0%; height: 100.0%;">Mississauga</div>`)[0];
+            popup_0653d92285133958e21968f614ca02ba.setContent(html_6bf56e3c27adb8c607c0741e96e4174a);
+        
+
+        circle_marker_915b1e8665df6b7e25cc0f3db40544bf.bindPopup(popup_0653d92285133958e21968f614ca02ba)
+        ;
+
+        
+    
+    
+            circle_marker_915b1e8665df6b7e25cc0f3db40544bf.bindTooltip(
+                `<div>
+                     Mississauga (Near GTA)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35f559b370955e68398a204b73dc1cb7 = L.marker(
+                [43.589, -79.6441],
+                {}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+            var beautify_icon_20c0f874f4484fb042ff2557d28aa375 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 7, "textColor": "green"}
+            )
+            marker_35f559b370955e68398a204b73dc1cb7.setIcon(beautify_icon_20c0f874f4484fb042ff2557d28aa375);
+        
+    
+            marker_35f559b370955e68398a204b73dc1cb7.bindTooltip(
+                `<div>
+                     Mississauga
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6824f810b65136a5f11f4cc41abbf67f = L.circleMarker(
+                [43.4675, -79.6877],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+        var popup_adbb86f436cdd4e6a3685c45b45ead19 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a59c8d69d40fa2e7c41432965842776 = $(`<div id="html_7a59c8d69d40fa2e7c41432965842776" style="width: 100.0%; height: 100.0%;">Oakville</div>`)[0];
+            popup_adbb86f436cdd4e6a3685c45b45ead19.setContent(html_7a59c8d69d40fa2e7c41432965842776);
+        
+
+        circle_marker_6824f810b65136a5f11f4cc41abbf67f.bindPopup(popup_adbb86f436cdd4e6a3685c45b45ead19)
+        ;
+
+        
+    
+    
+            circle_marker_6824f810b65136a5f11f4cc41abbf67f.bindTooltip(
+                `<div>
+                     Oakville (Near GTA)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d69c2c4c5548dd2dca57f5bb244b9e0 = L.marker(
+                [43.4675, -79.6877],
+                {}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+            var beautify_icon_282c6b578d27f4ad888782989af11b62 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 8, "textColor": "green"}
+            )
+            marker_9d69c2c4c5548dd2dca57f5bb244b9e0.setIcon(beautify_icon_282c6b578d27f4ad888782989af11b62);
+        
+    
+            marker_9d69c2c4c5548dd2dca57f5bb244b9e0.bindTooltip(
+                `<div>
+                     Oakville
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_deadb70b74958d177b1f8b5eab2a7ca8 = L.circleMarker(
+                [43.6205, -79.5665],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+        var popup_6a9020facd0a23cce4ba7ad6d1794f06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a64e66b52d43bf9d214ba9f18a795f2 = $(`<div id="html_5a64e66b52d43bf9d214ba9f18a795f2" style="width: 100.0%; height: 100.0%;">Etobicoke</div>`)[0];
+            popup_6a9020facd0a23cce4ba7ad6d1794f06.setContent(html_5a64e66b52d43bf9d214ba9f18a795f2);
+        
+
+        circle_marker_deadb70b74958d177b1f8b5eab2a7ca8.bindPopup(popup_6a9020facd0a23cce4ba7ad6d1794f06)
+        ;
+
+        
+    
+    
+            circle_marker_deadb70b74958d177b1f8b5eab2a7ca8.bindTooltip(
+                `<div>
+                     Etobicoke (Near GTA)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c906ce30cb1263b49ea373a111416da4 = L.marker(
+                [43.6205, -79.5665],
+                {}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+            var beautify_icon_0b9cc0e6d0606ab650dedec890b17e67 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 9, "textColor": "green"}
+            )
+            marker_c906ce30cb1263b49ea373a111416da4.setIcon(beautify_icon_0b9cc0e6d0606ab650dedec890b17e67);
+        
+    
+            marker_c906ce30cb1263b49ea373a111416da4.bindTooltip(
+                `<div>
+                     Etobicoke
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6ebe0807b9d9423a3bb225b21089607c = L.circleMarker(
+                [43.6896, -79.4737],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+        var popup_f2e7d8d36850f02e4e17419275bb2bc0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7965c2bd3bf0858dcd1af9e4459b9468 = $(`<div id="html_7965c2bd3bf0858dcd1af9e4459b9468" style="width: 100.0%; height: 100.0%;">York</div>`)[0];
+            popup_f2e7d8d36850f02e4e17419275bb2bc0.setContent(html_7965c2bd3bf0858dcd1af9e4459b9468);
+        
+
+        circle_marker_6ebe0807b9d9423a3bb225b21089607c.bindPopup(popup_f2e7d8d36850f02e4e17419275bb2bc0)
+        ;
+
+        
+    
+    
+            circle_marker_6ebe0807b9d9423a3bb225b21089607c.bindTooltip(
+                `<div>
+                     York (Near GTA)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5454d40c021c841b1229e7177587de98 = L.marker(
+                [43.6896, -79.4737],
+                {}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+            var beautify_icon_241ae6b8863ddc6a5dfc1c50d40f7b2d = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 10, "textColor": "green"}
+            )
+            marker_5454d40c021c841b1229e7177587de98.setIcon(beautify_icon_241ae6b8863ddc6a5dfc1c50d40f7b2d);
+        
+    
+            marker_5454d40c021c841b1229e7177587de98.bindTooltip(
+                `<div>
+                     York
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ebbc8fb508f458190d55c6a41c32f294 = L.circleMarker(
+                [43.7315, -79.791],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+        var popup_42183e3fcd6366c14278c8dbd94021f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2d9815e99ba1db8129aa010cf28b1eb = $(`<div id="html_e2d9815e99ba1db8129aa010cf28b1eb" style="width: 100.0%; height: 100.0%;">Brampton</div>`)[0];
+            popup_42183e3fcd6366c14278c8dbd94021f1.setContent(html_e2d9815e99ba1db8129aa010cf28b1eb);
+        
+
+        circle_marker_ebbc8fb508f458190d55c6a41c32f294.bindPopup(popup_42183e3fcd6366c14278c8dbd94021f1)
+        ;
+
+        
+    
+    
+            circle_marker_ebbc8fb508f458190d55c6a41c32f294.bindTooltip(
+                `<div>
+                     Brampton (Brampton/Stouffville Zone)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d79e9dee8bde069e4d8d5d9387d5acb1 = L.marker(
+                [43.7315, -79.791],
+                {}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+            var beautify_icon_5265a49867e96042997e144cd277671f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "purple", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 11, "textColor": "purple"}
+            )
+            marker_d79e9dee8bde069e4d8d5d9387d5acb1.setIcon(beautify_icon_5265a49867e96042997e144cd277671f);
+        
+    
+            marker_d79e9dee8bde069e4d8d5d9387d5acb1.bindTooltip(
+                `<div>
+                     Brampton
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_66310ee177f4bd69aa39a445b61853cb = L.circleMarker(
+                [43.9707, -79.2057],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+        var popup_fae676a90a3ab5fff0798d9eee5899e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc470a75e9d9b850306109241a6da352 = $(`<div id="html_fc470a75e9d9b850306109241a6da352" style="width: 100.0%; height: 100.0%;">Stouffville</div>`)[0];
+            popup_fae676a90a3ab5fff0798d9eee5899e6.setContent(html_fc470a75e9d9b850306109241a6da352);
+        
+
+        circle_marker_66310ee177f4bd69aa39a445b61853cb.bindPopup(popup_fae676a90a3ab5fff0798d9eee5899e6)
+        ;
+
+        
+    
+    
+            circle_marker_66310ee177f4bd69aa39a445b61853cb.bindTooltip(
+                `<div>
+                     Stouffville (Brampton/Stouffville Zone)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_032f073b6976037933f69dbcf8035773 = L.marker(
+                [43.9707, -79.2057],
+                {}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+            var beautify_icon_75991bbfd33aa9c37c81cb7b2873f40f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "purple", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 12, "textColor": "purple"}
+            )
+            marker_032f073b6976037933f69dbcf8035773.setIcon(beautify_icon_75991bbfd33aa9c37c81cb7b2873f40f);
+        
+    
+            marker_032f073b6976037933f69dbcf8035773.bindTooltip(
+                `<div>
+                     Stouffville
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c7e83c22a95195ac6ba64fde00fdbce9 = L.circleMarker(
+                [43.2557, -79.8711],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+        var popup_e416d561a9cb0891683d7478b4680ce5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_466d190fee5c33d534266db792ccf339 = $(`<div id="html_466d190fee5c33d534266db792ccf339" style="width: 100.0%; height: 100.0%;">Hamilton</div>`)[0];
+            popup_e416d561a9cb0891683d7478b4680ce5.setContent(html_466d190fee5c33d534266db792ccf339);
+        
+
+        circle_marker_c7e83c22a95195ac6ba64fde00fdbce9.bindPopup(popup_e416d561a9cb0891683d7478b4680ce5)
+        ;
+
+        
+    
+    
+            circle_marker_c7e83c22a95195ac6ba64fde00fdbce9.bindTooltip(
+                `<div>
+                     Hamilton (Hamilton/Burlington Zone)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4448772839a5299419bc8f3eab18ca3d = L.marker(
+                [43.2557, -79.8711],
+                {}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+            var beautify_icon_0e73b988244b4ebfb4f836209d0f38c0 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "darkred", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 13, "textColor": "darkred"}
+            )
+            marker_4448772839a5299419bc8f3eab18ca3d.setIcon(beautify_icon_0e73b988244b4ebfb4f836209d0f38c0);
+        
+    
+            marker_4448772839a5299419bc8f3eab18ca3d.bindTooltip(
+                `<div>
+                     Hamilton
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d38710af2effbc47d6919479d56a1e2f = L.circleMarker(
+                [43.3255, -79.799],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+        var popup_34f55470aefee661965f09d0eb6a24b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7560fd5cd9dd25b635e875e5b01d0c19 = $(`<div id="html_7560fd5cd9dd25b635e875e5b01d0c19" style="width: 100.0%; height: 100.0%;">Burlington</div>`)[0];
+            popup_34f55470aefee661965f09d0eb6a24b3.setContent(html_7560fd5cd9dd25b635e875e5b01d0c19);
+        
+
+        circle_marker_d38710af2effbc47d6919479d56a1e2f.bindPopup(popup_34f55470aefee661965f09d0eb6a24b3)
+        ;
+
+        
+    
+    
+            circle_marker_d38710af2effbc47d6919479d56a1e2f.bindTooltip(
+                `<div>
+                     Burlington (Hamilton/Burlington Zone)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2cc876690c9bd482453c16fc46b5f2e = L.marker(
+                [43.3255, -79.799],
+                {}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+            var beautify_icon_386965227c349298ea8f0533fa7af82d = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "darkred", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 14, "textColor": "darkred"}
+            )
+            marker_a2cc876690c9bd482453c16fc46b5f2e.setIcon(beautify_icon_386965227c349298ea8f0533fa7af82d);
+        
+    
+            marker_a2cc876690c9bd482453c16fc46b5f2e.bindTooltip(
+                `<div>
+                     Burlington
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_10f35439844d75e4827bfd776181dfe1 = L.circleMarker(
+                [43.4643, -80.5253],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+        var popup_0e156e4f31ae9218863aa59ed7d2b188 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_accf83e94875df8740e79984c046aa28 = $(`<div id="html_accf83e94875df8740e79984c046aa28" style="width: 100.0%; height: 100.0%;">Waterloo</div>`)[0];
+            popup_0e156e4f31ae9218863aa59ed7d2b188.setContent(html_accf83e94875df8740e79984c046aa28);
+        
+
+        circle_marker_10f35439844d75e4827bfd776181dfe1.bindPopup(popup_0e156e4f31ae9218863aa59ed7d2b188)
+        ;
+
+        
+    
+    
+            circle_marker_10f35439844d75e4827bfd776181dfe1.bindTooltip(
+                `<div>
+                     Waterloo (Far Zone)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9cddac047dd9366b64ffa1b244531bc = L.marker(
+                [43.4643, -80.5253],
+                {}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+            var beautify_icon_3c284daa3bdbae7553638456bfaccaf3 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "red", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 15, "textColor": "red"}
+            )
+            marker_c9cddac047dd9366b64ffa1b244531bc.setIcon(beautify_icon_3c284daa3bdbae7553638456bfaccaf3);
+        
+    
+            marker_c9cddac047dd9366b64ffa1b244531bc.bindTooltip(
+                `<div>
+                     Waterloo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_597f5f24b2ec338de500a4c57bd7ebac = L.circleMarker(
+                [43.4516, -80.4776],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+        var popup_ff36c97419d0feb05aa27bd6a35771ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41e01efcb1bf950cf05a1725dd9ec73c = $(`<div id="html_41e01efcb1bf950cf05a1725dd9ec73c" style="width: 100.0%; height: 100.0%;">Kitchener</div>`)[0];
+            popup_ff36c97419d0feb05aa27bd6a35771ca.setContent(html_41e01efcb1bf950cf05a1725dd9ec73c);
+        
+
+        circle_marker_597f5f24b2ec338de500a4c57bd7ebac.bindPopup(popup_ff36c97419d0feb05aa27bd6a35771ca)
+        ;
+
+        
+    
+    
+            circle_marker_597f5f24b2ec338de500a4c57bd7ebac.bindTooltip(
+                `<div>
+                     Kitchener (Far Zone)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_edfa4461e53c8f77b5884a3bac154e9a = L.marker(
+                [43.4516, -80.4776],
+                {}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+            var beautify_icon_13334c480048c4affac0d14c9d5a5059 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "red", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 16, "textColor": "red"}
+            )
+            marker_edfa4461e53c8f77b5884a3bac154e9a.setIcon(beautify_icon_13334c480048c4affac0d14c9d5a5059);
+        
+    
+            marker_edfa4461e53c8f77b5884a3bac154e9a.bindTooltip(
+                `<div>
+                     Kitchener
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8f5e6f2021a2d4168eadf463cb6db0d5 = L.circleMarker(
+                [43.5448, -80.255],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+        var popup_55914c7f9f976ed5787a33c5f483dfb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09890aa17e83a428c70d8bc6cb6384c7 = $(`<div id="html_09890aa17e83a428c70d8bc6cb6384c7" style="width: 100.0%; height: 100.0%;">Guelph</div>`)[0];
+            popup_55914c7f9f976ed5787a33c5f483dfb7.setContent(html_09890aa17e83a428c70d8bc6cb6384c7);
+        
+
+        circle_marker_8f5e6f2021a2d4168eadf463cb6db0d5.bindPopup(popup_55914c7f9f976ed5787a33c5f483dfb7)
+        ;
+
+        
+    
+    
+            circle_marker_8f5e6f2021a2d4168eadf463cb6db0d5.bindTooltip(
+                `<div>
+                     Guelph (Far Zone)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7d7f2c60a02894c572811e1bd803af5 = L.marker(
+                [43.5448, -80.255],
+                {}
+            ).addTo(map_1e1e63b45110ddb315daeb6cc804cb9f);
+        
+    
+            var beautify_icon_5ee65b9642498d592b90351b7773700d = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "red", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 17, "textColor": "red"}
+            )
+            marker_e7d7f2c60a02894c572811e1bd803af5.setIcon(beautify_icon_5ee65b9642498d592b90351b7773700d);
+        
+    
+            marker_e7d7f2c60a02894c572811e1bd803af5.bindTooltip(
+                `<div>
+                     Guelph
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
